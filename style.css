@@ -1,115 +1,134 @@
-body{
-  background-color: black;
-  font-family: 'Advent Pro';font-size: 16px;
-  margin: 0;
+body{ 
+  background-color: black; 
+  font-family: 'Ink free';font-size: 1em; 
+  margin: 0; 
+} 
+#main { 
+  margin: 0; 
+  padding: 0;  
+} 
+h1 { 
+ font-family: 'Metal Macabre';    
 }
-#main {
-  margin: 0;
-  padding: 0; 
+h2 { 
+  font-family: 'Ink free';
+  font-size: 3vw;
+  font-weight: bolder;   
+ }
+.whiteFont{
+  color: white;
 }
-h1 {
-    
-}
-.responsive {
-  max-width: 100%;
-  height: 60%;
-}
-.responsive2 {
-  width: auto;
-  min-height: 50%;
-}
-.responsive3 {
-  width: auto;
-  max-height: 90%;
-}
-.responsive4 {
-  max-width: auto;
-  height: 80%;
-}
-.button {
-  background-color: white;
-  border: 2px solid red;
-  color: RED;
-  font-size: 5rem;
-  padding: 10px;
+.contain {
+  object-fit: contain;
+  object-position: center;
   text-align: center;
-  display: inline-block;
-  font-size: 2vw;
-  margin: 4px 2px;
-  border-radius: 22px;
-  cursor: pointer;
 }
-.contenedor{
-      display: grid;
-      grid-template-columns: repeat(24, 1fr);
-      grid-template-rows: repeat(20, 1fr);
-      font-family: 'Advent Pro';
-      font-size: 12px;
-      margin: 0;
-    }
-    #logoWoDTop{
-     
-      align-content: center; 
-      grid-row: 1/10;
-      grid-column: 8/23;
+.middle {
+  padding: 1ex;
+  vertical-align: middle;
+}
+.button { 
+  background-color: white; 
+  border: 2px solid red; 
+  color: RED; 
+  font-size: 4rem; 
+  padding: 8px; 
+  text-align: center; 
+  display: inline-block; 
+  font-size: 2vw; 
+  margin: 3px 1px; 
+  border-radius: 22px; 
+  cursor: pointer; 
+} 
+.contenedor{ 
+      display: grid; 
+      grid-template-columns: repeat(32, auto); 
+      grid-template-rows: repeat(18, auto); 
+      margin: 0; 
+    } 
+    #logoWoDTop{  
+      background-blend-mode: overlay;
+      z-index: -1; 
+      max-height: 70%;
+      grid-row: 2/7; 
+      grid-column: 14/21; 
       padding-top: 1%;
-      padding-left: 0%;
+      text-align: center;
+    } 
+    #leftColumn{ 
+      z-index: -2; 
+      grid-row: 3/18; 
+      grid-column: 2/11;
     }
-    #leftColumn{
-      z-index: -2;
-      grid-row: 1/21;
-      grid-column: 1/7;
+    #AliveListHeader{
+      background-blend-mode: overlay;
+      font-size: larger; 
+      z-index: -1; 
+      grid-row: 1/4; 
+      grid-column: 2/11;
+      text-align: center;
     }
     #AliveCoders{
-      z-index: -1;
-      grid-row: 7/19;
-      grid-column: 2/6;
+      background-blend-mode: overlay;
+      z-index: -1; 
+      grid-row: 6/16; 
+      grid-column: 2/11; 
       text-align: center;
-      font-family: 'Ink free';
-      color: white;
-      width: 18vw;
-      height: 36vh;
-      overflow: auto;
-      scroll-behavior: smooth;
-      font-size: 1vw;
-    }
-    #centerWheel{
-      z-index: -1;
-      margin: 0;
-      grid-row: 3/17;
-      grid-column: 11/17;
-    }
-    #rightColumn{
-      z-index: -2;
-      grid-row: 1/18;
-      grid-column: 19/24;
-      padding-top: 2vw;
       padding-left: 2vw;
-    }
-    #bottomSelectButton{
-      z-index: 1;
-      margin: 0;
-      grid-row: 16/18;
-      grid-column: 10/16;
-    }
-    #bottomResetButton{
-      z-index: 1;
-      margin: 0;
-      grid-row: 16/18;
-      grid-column: 20/24;
-      padding-left: 1vw;
-    }
-    #fakeSelected 
-    {
+      font-family: 'Ink free'; 
+      color: white; 
+      width: 20vw; 
+      height: 50vh; 
+      overflow: auto; 
+      scroll-behavior: smooth; 
+      font-size: 1vw; 
+    } 
+    #centerWheel{ 
       background-blend-mode: overlay;
       z-index: 0;
-      text-align: center;
-      font-family: 'Ink free';
-      color: red;
-      font-size: 4vh;
-      font-weight: bolder;
-      grid-row: 3/13;
-      grid-column: 20/24;
-      padding-top: 1vw;
+      grid-row: 5/15; 
+      grid-column: 11/23;
+      text-align:center; 
     }
+    #deadHeader{
+      background-blend-mode: overlay;
+      z-index: -1; 
+      grid-row: 1/4; 
+      grid-column: 24/32;
+      text-align:center; 
+    } 
+    #rightColumn{
+      background-blend-mode: overlay;
+      z-index: -2; 
+      grid-row: 3/13; 
+      grid-column: 24/32;
+      text-align:center;
+    } 
+    #bottomSelectButton{ 
+      z-index: 1; 
+      margin: 0; 
+      grid-row: 13/18; 
+      grid-column: 11/23; 
+      text-align:center;
+    } 
+    #bottomResetButton{ 
+      z-index: 1; 
+      margin: 0; 
+      grid-row: 14/18; 
+      grid-column: 24/32; 
+      text-align:center; 
+    } 
+    #fakeSelected  
+    { 
+      background-blend-mode: overlay; 
+      z-index: 1; 
+      text-align: center; 
+      font-family: 'Ink free'; 
+      color: red; 
+      font-size: 3vh; 
+      font-weight: bolder; 
+      grid-row: 3/13; 
+      grid-column: 24/32; 
+      padding-top: 1vw; 
+    } 
     

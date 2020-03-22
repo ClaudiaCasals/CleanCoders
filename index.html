@@ -1,3 +1,6 @@
+!DOCTYPE html>
+<html lang="en">
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,14 +21,19 @@
     <main>
         <div class="contenedor">
             <div id="logoWoDTop">
-                <img src="https://i.ibb.co/Vj7KDcm/Wo-D-Title-text.png" class="responsive"
-                    alt="Wheel of Doom title logo" />
+                <h1>
+                    <img src="https://i.ibb.co/hym27V6/Wo-D-Title-text.png" class="contain" class="middle"
+                        alt="Wheel of Doom title logo" />
+                </h1>
             </div>
             <div id="leftColumn">
-                <img src="https://i.ibb.co/4MHRL9H/WoD-Tree.png" class="responsive2"
+                <img src="https://i.ibb.co/FqxhnWd/WoD-Tree.png" class="contain"
                     alt="Background picture of a tree listing alive coders" />
             </div>
-            <div id="AliveCoders">
+            <div id="AliveListHeader" class="whiteFont" class="contain">
+                <h2 font size="5em">Alive coders</h2>
+            </div>
+            <div id="AliveCoders" class="contain">
                 <ul style="list-style-type:none;">
                     <li>Alejandro Acho</li>
                     <li>Joana Börsch Peiró</li>
@@ -53,20 +61,24 @@
                     <li>Claudia Casals Nervaez</li>
                 </ul>
             </div>
-            <div id="centerWheel">
-                <img src="https://i.ibb.co/QM1LffX/Wheel2.gif" class="responsive3"
+            <div id="centerWheel" class="contain">
+                <img src="https://i.ibb.co/QM1LffX/Wheel2.gif"
                     alt="Background picture of Doom character holding a wheel of fortune" />
             </div>
+            <div id="deadHeader" class="whiteFont" class="contain">
+                <h2 font size="5em">Dead Coders</h2>
+            </div>
             <div id="rightColumn">
-                <img src="https://i.ibb.co/G0Y77gp/WoD-RIP.png" class="responsive4"
+                <img src="https://i.ibb.co/2gz7QPv/WoD-RIP.png" class="contain"
                     alt="Background picture of a gravestone listing dead coders" />
             </div>
             <div id="bottomSelectButton">
-                <button onclick="setTimeout(myFunction, 2000);" class="button">SELECT CODER</button>
+                <button onclick="setTimeout(myFunction, 2000);" class="button" class="contain" class="middle">SELECT
+                    CODER</button>
                 <script>
                     function myFunction() {
                         document.getElementById("fakeSelected").innerHTML = "Diego Córdoba";
-                    }
+                    } 
                 </script>
             </div>
             <div id="fakeSelected">
