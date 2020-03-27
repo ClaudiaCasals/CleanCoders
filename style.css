@@ -118,7 +118,7 @@ h2 {
       grid-column: 24/32; 
       text-align:center; 
     } 
-    #fakeSelected  
+    #deadCoders
     { 
       background-blend-mode: overlay; 
       z-index: 1; 
